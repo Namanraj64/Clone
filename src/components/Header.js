@@ -23,29 +23,32 @@ const Header = () => {
         backgroundColor: '#1976d2',
         boxShadow: isScrolled ? '0px 2px 4px rgba(0,0,0,0.2)' : 'none',
         transition: '0.3s',
+        height:"5rem",
+        
+        
       }}
     >
       <Container maxWidth="lg">
-        <Toolbar>
+        <Toolbar sx={{gap:2}}>
           <Typography variant="h6" sx={{ flexGrow: 1 }}>
-          <img src={Logo} alt="Logo" style={{ height: '50px' }} />
+          <img src={Logo} alt="Logo" style={{ height: '50px' , paddingTop:"1rem"}} />
           </Typography>
-          <Button color="inherit" component={Link} to="/">
+          <Button color="inherit" component={Link} to="/" sx={{'&:hover': {backgroundColor: 'red',}}}>
             Home
           </Button>
-          <Button color="inherit" component={Link} to="/about">
+          <Button color="inherit" component={Link} to="/about"  sx={{'&:hover': {backgroundColor: 'red',}}}>
             About Us
           </Button>
-          <Button color="inherit" component={Link} to="/services">
+          <Button color="inherit" component={Link} to="/services" sx={{'&:hover': {backgroundColor: 'red',}}}>
             Services
           </Button>
-          <Button color="inherit" component={Link} to="/portfolio">
+          <Button color="inherit" component={Link} to="/portfolio" sx={{'&:hover': {backgroundColor: 'red',}}}>
             Portfolio
           </Button>
-          <Button color="inherit" component={Link} to="/testimonials">
+          <Button color="inherit" component={Link} to="/testimonials" sx={{'&:hover': {backgroundColor: 'red',}}}>
             Testimonials
           </Button>
-          <Button color="inherit" component={Link} to="/contact">
+          <Button color="inherit" component={Link} to="/contact" sx={{'&:hover': {backgroundColor: 'red',}}}>
             Contact
           </Button>
           <Button

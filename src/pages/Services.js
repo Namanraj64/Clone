@@ -15,7 +15,7 @@ const Services = () => {
   return (
     <>
       <Header />
-      <Container sx={{ padding: '4rem 0' }}>
+      <Container sx={{ padding: '7rem 0' }}>
         <Typography variant="h4" align="center" gutterBottom>
           Our Services
         </Typography>

@@ -8,8 +8,8 @@ const About = () => {
   return (
     <>
     <Header/>
-    <Container sx={{ padding: '4rem 0' }}>
-      <Typography variant="h4" gutterBottom>
+    <Container sx={{ padding: '7rem 0' }}>
+      <Typography variant="h4" gutterBottom  align='center'>
         About Deeva Payon
       </Typography>
       <Typography variant="body1" paragraph>

@@ -3,6 +3,8 @@ import React from 'react';
 import { Box, Typography, Button } from '@mui/material';
 import { motion } from 'framer-motion';
 
+import backimg from "../assest/HeroBackground.jpg"; // Corrected asset path
+
 const Hero = () => {
   const scrollToServices = () => {
     document.getElementById('services-section').scrollIntoView({ behavior: 'smooth' });
@@ -16,10 +18,9 @@ const Hero = () => {
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../assets/HeroBackground.jpg")',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        color: '#fff',
+        position: 'relative', // Set relative positioning
+        overflow: 'hidden', // Hide overflow
+        color: '#ffff',
         textAlign: 'center',
       }}
       component={motion.div}
@@ -27,11 +28,27 @@ const Hero = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
     >
+      {/* Background Image with Blur */}
+      <Box
+        sx={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+          backgroundImage: `url(${backimg})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          filter: 'blur(8px)', // Apply blur effect
+          zIndex: -1, // Send the background to the back
+        }}
+      />
+
       <Typography variant="h2" gutterBottom>
-        Welcome to Deeva Payon
+        <b>Welcome to Deeva Payon</b>
       </Typography>
-      <Typography variant="h5" sx={{ marginBottom: 2 }}>
-        We provide the best solutions for your business.
+      <Typography variant="h5" sx={{ marginBottom: 2}}>
+        <b>We provide the best solutions for your business.</b>
       </Typography>
       <Button
         variant="contained"

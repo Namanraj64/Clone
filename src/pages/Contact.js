@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <>
       <Header />
-      <Container sx={{ padding: '4rem 0' }}>
+      <Container sx={{ padding: '7rem 0' }}>
         <Typography variant="h4" align="center" gutterBottom>
           Contact Us
         </Typography>
@@ -16,8 +16,8 @@ const Contact = () => {
           component="form"
           sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 2 }}
         >
-          <TextField label="Name" variant="outlined" fullWidth />
-          <TextField label="Email" type="email" variant="outlined" fullWidth />
+          <TextField label="Name" variant="outlined" fullWidth required />
+          <TextField label="Email" type="email" variant="outlined" fullWidth required/>
           <TextField label="Message" multiline rows={4} variant="outlined" fullWidth />
           <Button variant="contained" color="primary">
             Submit
