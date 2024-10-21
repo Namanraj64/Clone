@@ -26,6 +26,7 @@ function App() {
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/testimonials" element={<Testimonials />} />
           <Route path="/contact" element={<Contact />} />
+          <h2>Heelo Naman</h2>
         </Routes>
       </Box>
     </Router>
