@@ -1,8 +1,9 @@
 // src/components/Header.js
 import React, { useState, useEffect } from 'react';
 import { AppBar, Toolbar, Typography, Button, Container, useScrollTrigger, Slide } from '@mui/material';
-import About from '../pages/About';
 import { Link } from 'react-router-dom';
+import Logo from '../assest/cropped-DEEVA-LOGO-2.jpg'
+
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -27,7 +28,7 @@ const Header = () => {
       <Container maxWidth="lg">
         <Toolbar>
           <Typography variant="h6" sx={{ flexGrow: 1 }}>
-            Ecuzen Clone
+          <img src={Logo} alt="Logo" style={{ height: '50px' }} />
           </Typography>
           <Button color="inherit" component={Link} to="/">
             Home

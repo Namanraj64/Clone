@@ -16,7 +16,7 @@ const Hero = () => {
         flexDirection: 'column',
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/path/to/your/image.jpg")',
+        backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../assets/HeroBackground.jpg")',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         color: '#fff',
