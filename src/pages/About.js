@@ -3,31 +3,32 @@ import React from 'react';
 import { Container, Typography, Box } from '@mui/material';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
+import AboutUs from '../components/About/AnoutUs/AboutUs';
+import CompanyStory from '../components/About/CompanyStory/CompanyStory';
+import CoFounder from '../components/About/CoFounder/CoFounder';
+import Direct from '../components/About/Directer/Direct';
+import OurMission from '../components/About/OurMission/OurMission';
+import HowWeWork from '../components/About/HowWeWork/HowWeWork';
+import SelectDeeva from '../components/About/SelectDeeva/SelectDeeva';
+import Software from '../components/About/Software/Software';
+import OurBanking from '../components/About/OurBanking/OurBanking';
+import Services from '../components/Services';
+
 
 const About = () => {
   return (
     <>
     <Header/>
-    <Container sx={{ padding: '4rem 0' }}>
-      <Typography variant="h4" gutterBottom>
-        About Deeva Payon
-      </Typography>
-      <Typography variant="body1" paragraph>
-        Deeva Payon is a leading software development company specializing in delivering high-quality solutions to clients worldwide. Our mission is to empower businesses with innovative technology, ensuring growth and success. Our team of experts is committed to building scalable, secure, and efficient applications tailored to your needs.
-      </Typography>
-      <Typography variant="h6" sx={{ marginTop: '2rem' }}>
-        Our Vision
-      </Typography>
-      <Typography variant="body1" paragraph>
-        To become the most trusted software development partner for businesses by providing exceptional service, innovative solutions, and a client-first approach.
-      </Typography>
-      <Typography variant="h6" sx={{ marginTop: '2rem' }}>
-        Our Team
-      </Typography>
-      <Typography variant="body1">
-        We are a team of passionate developers, designers, and strategists dedicated to delivering the best results for our clients.
-      </Typography>
-    </Container>
+    <AboutUs/>
+    <CompanyStory/>
+    <CoFounder/>
+    <Direct/>
+    <OurMission/>
+    <HowWeWork/>
+    <Software/>
+    <SelectDeeva/>
+    <Services/>
+    <OurBanking/>
     <Footer/>
     </>
   );

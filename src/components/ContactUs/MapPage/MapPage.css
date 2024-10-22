@@ -1,0 +1,101 @@
+/* MapPage.css */
+
+.map-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .map-embed {
+    width: 800vh;
+    max-width: 180vh;
+    height: 450px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Responsive adjustments for map */
+  @media (max-width: 992px) {
+    .map-embed {
+      height: 400px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .map-embed {
+      height: 300px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .map-embed {
+      height: 250px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .map-embed {
+      height: 200px;
+    }
+  }
+  
+  /* Styles for the info cards */
+  .info-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+  }
+  
+  .info-card {
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s ease;
+  }
+  
+  .info-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .info-icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .info-card h3 {
+    margin: 0;
+    font-size: 20px;
+  }
+  
+  .info-card p {
+    color: #666;
+  }
+  
+  .info-card a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #000;
+    border-bottom: 1px solid #000;
+    transition: color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .info-card a:hover {
+    color: #007bff;
+    border-color: #007bff;
+  }
+  

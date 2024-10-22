@@ -1,0 +1,139 @@
+/* General Styling */
+.ag-format-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+    .ag-courses_box {
+        flex-direction: column;
+        align-items: center;
+    }
+    .intro-fin h3 {
+        font-size: 28px;
+    }
+    .abt-choos-cont {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .ag-format-container {
+        padding: 20px 40px;
+    }
+}
+
+/* Intro Section Styling */
+.intro-fin {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.intro-fin h3 {
+    background-color: #f72f20;
+    color: #fff;
+    padding: 10px;
+    border-radius: 15px 0;
+    margin: 15px 0;
+    display: inline-block;
+    font-size: 30px;
+    text-shadow: 1px 1px 6px rgb(0 0 0 )
+}
+
+.abt-choos-cont {
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+/* Courses Box Styling */
+.ag-courses_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.ag-courses_item {
+    width: calc(33.333% - 20px);
+    margin-bottom: 15px;
+    text-align: center;
+    position: relative;
+}
+
+/* Course Item Box Styling */
+.ag-courses-item_bg {
+    background-color: #071230;
+    color: #fff;
+    border-radius: 50px 0px;
+    padding: 30px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+/* Initial red corner using pseudo-element */
+.ag-courses-item_bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    background-color: #f72f20;
+    border-radius: 0 0 50px 0;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect to change the entire box color */
+.ag-courses-item_bg:hover {
+    background-color: #f72f20;
+    color: #fff;
+}
+
+.ag-courses-item_bg:hover::before {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.ag-courses-item_title {
+    font-size: 18px;
+    font-weight: bold;
+    z-index: 1;
+    position: relative;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+    .ag-courses_item {
+        width: 90%;
+    }
+}
+
+/* Styling for large screens */
+@media (min-width: 1025px) {
+    .ag-courses_item {
+        width: calc(25% - 20px);
+    }
+}
+
+
+
+.bg-bank-head {
+    height: 60px;
+}
+.bg-bank-head, .bg-det {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    background-image: url('../../../assest/dot-grid.png');
+    background-position: bottom left;
+}

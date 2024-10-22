@@ -8,6 +8,11 @@ import Services from './pages/Services';
 import Portfolio from './pages/Portfolio';
 import Testimonials from './pages/Testimonials';
 import Contact from './pages/Contact';
+import B2BSoftwareSolutions from './Services/B2BSoftware';
+import B2BSoftware from './Services/B2BSoftware';
+import AndroidAppDevelopment from './Services/androidapplicationdevelopment';
+// import WhatsApp from './WhatsApp/WhatsApp';
+// import ScrollToTop from './ScrollToTop/ScrollToTop';
 
 function App() {
   return (
@@ -26,8 +31,12 @@ function App() {
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/testimonials" element={<Testimonials />} />
           <Route path="/contact" element={<Contact />} />
-          <h2>Heelo Nama hgjghjbn</h2>
+          {/* <h2>Heelo Nama hgjghjbn</h2> */}
+          <Route path="/b2bsoftware" element={<B2BSoftware/>} />
+          <Route path="/andriodapp" element={<AndroidAppDevelopment/>} />
         </Routes>
+        {/* <WhatsApp/>
+        <ScrollToTop/> */}
       </Box>
     </Router>
   );

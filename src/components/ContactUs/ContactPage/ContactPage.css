@@ -1,0 +1,141 @@
+
+.custom-background {
+    background: url('../../../assest/contact.png') no-repeat center top;
+    background-size: cover;
+    min-height: 70vh; 
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .navigation {
+    position: absolute;
+    top: 65%;
+    left: 8%;
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  .home-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #d9d9d9;
+    margin-bottom: 1rem;
+    font-size: 17px;
+  }
+  
+  .arrow {
+    margin-right: 0.5rem;
+    font-size: 1.25rem;
+  }
+  
+  .contact-text {
+    font-size: 48px;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  
+  @media (max-width: 1200px) {
+    .custom-background {
+      min-height: 65vh; 
+    }
+    .navigation {
+      font-size: 1.4rem;
+      left: 6%;
+    }
+    .home-link {
+      font-size: 16px;
+    }
+    .contact-text {
+      font-size: 42px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .custom-background {
+      min-height: 60vh; 
+    }
+    .navigation {
+      font-size: 1.3rem;
+      left: 5%;
+    }
+    .home-link {
+      font-size: 15px;
+    }
+    .contact-text {
+      font-size: 36px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .custom-background {
+      min-height: 55vh; 
+      padding: 0 3%;
+      align-items: flex-start;
+    }
+    .navigation {
+      top: 50%;
+      left: 4%;
+      font-size: 1.2rem;
+      transform: translateY(-50%);
+    }
+    .home-link {
+      font-size: 14px;
+    }
+    .contact-text {
+      font-size: 32px; 
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .custom-background {
+      min-height: 50vh; 
+    }
+    .navigation {
+      top: 50%;
+      left: 3%;
+      font-size: 1rem;
+    }
+    .home-link {
+      font-size: 13px;
+    }
+    .contact-text {
+      font-size: 28px; 
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .custom-background {
+      min-height: 45vh; 
+      background-position: center top;
+    }
+    .navigation {
+      top: 50%;
+      left: 2%;
+      font-size: 0.9rem;
+    }
+    .home-link {
+      font-size: 12px;
+    }
+    .contact-text {
+      font-size: 24px; 
+    }
+  }
+
+
+ 
+/* .bg-bank-head {
+    height: 60px;
+}
+.bg-bank-head, .bg-det {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    background-image: url(dot-grid.png);
+    background-position: bottom left;
+} */
