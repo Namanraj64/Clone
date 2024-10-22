@@ -28,7 +28,7 @@ const ContactUs = () => {
           {/* Google Map */}
           <Grid item xs={12} md={6}>
             <iframe
-              src="https://www.google.com/maps/d/embed?mid=1a6HCqseLrQ7WLdZWK4LSuMZNnRjDFTc&ehbc=2E312F"
+              src="https://www.google.com/maps/d/embed?mid=1h2_T7Z1sRNCewLZvbC32fE2Q9tDWGoo&ehbc=2E312F"
               width="100%"
               height="450"
               style={{ border: 0, borderRadius: "10px" }}
