@@ -1,0 +1,74 @@
+.mission-vision-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 40px;
+    background-image: url('../../../assest/HeroBackground.jpg'); /* Reference to your background image */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+    margin: 20px;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    top: -15px;
+    left: -15px;
+}
+
+.icon img {
+    width: 80px;
+    height: 80px;
+}
+
+.card h2 {
+    font-size: 35px;
+    margin-left: 60px; 
+    text-shadow: 0 1px 12px rgb(0 0 0 / .6);
+}
+
+.card p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+@media (max-width: 1200px) {
+    .mission-vision-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .card {
+        width: calc(50% - 40px); /* Two columns */
+    }
+}
+
+@media (max-width: 768px) {
+    .mission-vision-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        margin: 10px;
+    }
+    .icon {
+        position: static;
+        margin-bottom: 10px;
+    }
+
+    .card h2 {
+        margin-left: 0;
+    }
+}

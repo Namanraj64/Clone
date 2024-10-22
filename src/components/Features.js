@@ -1,12 +1,39 @@
 // src/components/Features.js
 import React from 'react';
 import { Container, Grid, Typography, Box } from '@mui/material';
-import { Speed, Lock, Build } from '@mui/icons-material'; // Import relevant icons
+import { Speed, Lock, Build, TrendingUp, HeadsetMic, Lightbulb } from '@mui/icons-material'; // Additional icons
 
 const features = [
-  { title: 'High Performance', description: 'Our services are optimized for speed and efficiency.', icon: <Speed fontSize="large" /> },
-  { title: 'Secure', description: 'We ensure your business data is safe and secure.', icon: <Lock fontSize="large" /> },
-  { title: 'User-Friendly', description: 'Our solutions are easy to use and customizable.', icon: <Build fontSize="large" /> },
+  {
+    title: 'High Performance',
+    description: 'Our services are optimized for speed and efficiency, ensuring a seamless experience.',
+    icon: <Speed fontSize="large" />,
+  },
+  {
+    title: 'Secure',
+    description: 'We ensure your business data is safe with industry-leading security protocols.',
+    icon: <Lock fontSize="large" />,
+  },
+  {
+    title: 'User-Friendly',
+    description: 'Our solutions are intuitive, customizable, and easy to use for all user levels.',
+    icon: <Build fontSize="large" />,
+  },
+  {
+    title: 'Scalable Solutions',
+    description: 'Our services are designed to grow with your business, adapting to increasing demands.',
+    icon: <TrendingUp fontSize="large" />,
+  },
+  {
+    title: '24/7 Customer Support',
+    description: 'We offer round-the-clock support to ensure your business runs smoothly.',
+    icon: <HeadsetMic fontSize="large" />,
+  },
+  {
+    title: 'Innovative Technologies',
+    description: 'We leverage cutting-edge technology to deliver state-of-the-art solutions.',
+    icon: <Lightbulb fontSize="large" />,
+  },
 ];
 
 const Features = () => {
@@ -16,7 +43,7 @@ const Features = () => {
         Why Choose Us
       </Typography>
       <Typography variant="subtitle1" align="center" color="text.secondary" paragraph>
-        Discover what makes us the best choice for your business needs.
+        Explore the key features that make our services stand out in the industry.
       </Typography>
 
       <Grid container spacing={4}>
@@ -37,9 +64,7 @@ const Features = () => {
                 },
               }}
             >
-              <Box sx={{ mb: 2 }}>
-                {feature.icon} {/* Display the relevant icon */}
-              </Box>
+              <Box sx={{ mb: 2 }}>{feature.icon}</Box> {/* Display the relevant icon */}
               <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
                 {feature.title}
               </Typography>

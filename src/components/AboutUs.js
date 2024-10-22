@@ -2,6 +2,7 @@
 import React from 'react';
 import { Container, Grid, Typography, Box, Fade, Button } from '@mui/material';
 import AboutUsImg from '../assest/about-us.jpg';
+import { Link } from 'react-router-dom';
 
 const AboutUs = () => {
   return (
@@ -41,6 +42,7 @@ const AboutUs = () => {
                   variant="contained"
                   color="primary"
                   size="large"
+                  component={Link} to="/about"
                   sx={{ marginTop: '2rem', textTransform: 'none', borderRadius: '8px' }}
                 >
                   Learn More About Us

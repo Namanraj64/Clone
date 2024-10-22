@@ -9,21 +9,21 @@ const testimonials = [
     name: 'Naman Raj',
     position: 'Web Developer, DeevaPayon',
     image: 'https://media.licdn.com/dms/image/v2/D5603AQHArq1dtZUoYw/profile-displayphoto-shrink_100_100/profile-displayphoto-shrink_100_100/0/1712225941368?e=1735171200&v=beta&t=M36QHl9xdWOyF2smQFqIY0ZFsYrb5QUTOovrHwtJjvA', // Placeholder image
-    rating: 5,
+    rating: 4,
   },
   {
     quote: 'Their service is exceptional, and they truly care about customer satisfaction. We’ve seen great results in our workflow efficiency.',
     name: 'Ankit Rai',
     position: 'Project Head, DeevaPayon',
     image: 'https://media.licdn.com/dms/image/v2/D4E03AQGsCQJHKDWYxw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1729147988112?e=1735171200&v=beta&t=iVXve1mJGvOP05VXFEmUuSlfQM1qC-4q8o2tR1MEfBo', // Placeholder image
-    rating: 4,
+    rating: 4.5,
   },
   {
     quote: 'Reliable, professional, and highly recommended. Their team is always ready to help and goes the extra mile for us.',
     name: 'Ritu Raj Singh',
     position: 'Web Developer, DeevaPayon',
     image: 'https://media.licdn.com/dms/image/v2/D5635AQF0oB6Zs8eLyQ/profile-framedphoto-shrink_400_400/profile-framedphoto-shrink_400_400/0/1726997150297?e=1730178000&v=beta&t=efrZDulI_2vqIK9YN8hxjVpE5nBN2WuVY3BvRD8gJ6g', // Placeholder image
-    rating: 5,
+    rating: 4,
   },
 ];
 
