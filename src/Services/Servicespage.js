@@ -10,19 +10,19 @@ const services = [
     icon: <Business fontSize="large" sx={{ color: '#1976d2' }} />,
     title: 'B2B Software Solutions',
     description: 'Robust software solutions to enhance your business processes.',
-    link: '/b2bsoftware',
+    link: '/services/b2bsoftware',
   },
   {
     icon: <PhoneAndroid fontSize="large" sx={{ color: '#1976d2' }} />,
     title: 'Android Application Development',
     description: 'Custom Android apps to meet your business and customer needs.',
-    link: '/andriodapp',
+    link: '/services/andriodapp',
   },
   {
     icon: <Devices fontSize="large" sx={{ color: '#1976d2' }} />,
     title: 'Website Development',
     description: 'Stunning websites built with the latest technologies for optimal performance.',
-    link: '/services/website-development',
+    link: '/services/websitedevelopment',
   },
   {
     icon: <DesignServices fontSize="large" sx={{ color: '#1976d2' }} />,
@@ -34,7 +34,7 @@ const services = [
     icon: <AccountBalance fontSize="large" sx={{ color: '#1976d2' }} />,
     title: 'Fintech Software Development',
     description: 'Innovative financial technology solutions for the modern enterprise.',
-    link: '/services/fintech-software-development',
+    link: '/services/fintechsoftweredevelopment',
   },
   {
     icon: <Payment fontSize="large" sx={{ color: '#1976d2' }} />,
@@ -70,7 +70,7 @@ const services = [
     icon: <Code fontSize="large" sx={{ color: '#1976d2' }} />,
     title: 'Software Development',
     description: 'End-to-end software development services for businesses of all sizes.',
-    link: '/services/software-development',
+    link: '/services/softwaredevelopment',
   },
 ];
 

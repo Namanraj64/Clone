@@ -1,6 +1,6 @@
 // src/components/Header.js
 import React, { useState, useEffect } from 'react';
-import { AppBar, Toolbar, Typography, Button, Container, IconButton, Drawer, List, ListItem, ListItemText, Box } from '@mui/material';
+import { AppBar, Toolbar, Typography, Button, Container, IconButton, Drawer, List, ListItem, ListItemText, Box, Menu, MenuItem } from '@mui/material';
 import { Menu as MenuIcon, Close as CloseIcon } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
 import Logo from '../assest/cropped-DEEVA-LOGO-2.jpg';
@@ -8,9 +8,18 @@ import Logo from '../assest/cropped-DEEVA-LOGO-2.jpg';
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [anchorEl, setAnchorEl] = useState(null); // For dropdown
 
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
+  };
+
+  const handleServicesClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleServicesClose = () => {
+    setAnchorEl(null);
   };
 
   useEffect(() => {
@@ -46,9 +55,10 @@ const Header = () => {
       <AppBar
         position="fixed"
         sx={{
-          backgroundColor: '#1976d2',
+          backgroundColor: '#fff',
           boxShadow: isScrolled ? '0px 2px 4px rgba(0,0,0,0.2)' : 'none',
           transition: '0.3s',
+          color: "#000",
         }}
       >
         <Container maxWidth="lg">
@@ -59,22 +69,23 @@ const Header = () => {
 
             {/* Desktop Menu */}
             <Box sx={{ display: { xs: 'none', md: 'flex' }, gap: 2 }}>
-              <Button color="inherit" component={Link} to="/" sx={{ '&:hover': { backgroundColor: 'red' } }}>
+              <Button color="inherit" component={Link} to="/" sx={{ '&:hover': { backgroundColor: '#9c27b0', color:"#fff"  }, fontSize:'15px' }}>
                 Home
               </Button>
-              <Button color="inherit" component={Link} to="/about" sx={{ '&:hover': { backgroundColor: 'red' } }}>
+              <Button color="inherit" component={Link} to="/about" sx={{ '&:hover': { backgroundColor: '#9c27b0', color:"#fff"  }, fontSize:'15px' }}>
                 About Us
               </Button>
-              <Button color="inherit" component={Link} to="/services" sx={{ '&:hover': { backgroundColor: 'red' } }}>
+              <Button color="inherit" component={Link} to="/services" sx={{ '&:hover': { backgroundColor: '#9c27b0', color:"#fff"  }, fontSize:'15px' }}>
                 Services
               </Button>
-              <Button color="inherit" component={Link} to="/portfolio" sx={{ '&:hover': { backgroundColor: 'red' } }}>
-                Portfolio
+
+              <Button color="inherit" component={Link} to="/blog" sx={{ '&:hover': { backgroundColor: '#9c27b0', color:"#fff"  }, fontSize:'15px' }}>
+                Blog
               </Button>
-              <Button color="inherit" component={Link} to="/testimonials" sx={{ '&:hover': { backgroundColor: 'red' } }}>
-                Testimonials
+              <Button color="inherit" component={Link} to="/career" sx={{ '&:hover': { backgroundColor: '#9c27b0', color:"#fff"  }, fontSize:'15px' }}>
+                Carrer
               </Button>
-              <Button color="inherit" component={Link} to="/contact" sx={{ '&:hover': { backgroundColor: 'red' } }}>
+              <Button color="inherit" component={Link} to="/contact" sx={{ '&:hover': { backgroundColor: '#9c27b0', color:"#fff"  }, fontSize:'15px' }}>
                 Contact
               </Button>
               <Button variant="contained" color="secondary" sx={{ marginLeft: 2 }}>
