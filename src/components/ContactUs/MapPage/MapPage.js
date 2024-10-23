@@ -1,45 +1,36 @@
 import React from 'react';
-import './MapPage.css';
-// import emailjs from '@emailjs/browser';
+import { Grid } from "@mui/material";
+
 const MapPage = () => {
   return (
-    <div className="map-page">
-      <div className="map-container">
-        <div className="map-embed">
-          <iframe
-            src="https://www.google.com/maps/d/embed?mid=1St3NVf9NUFQIEjrKfN9jv1HX2g7hnFQ&ehbc=2E312F"
-            width="100%"
-            height="100%"
-            style={{ border: 0 }}
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
+    <Grid item xs={12} md={6} style={{ padding: '20px' }}> {/* Add padding to Grid item */}
+      <div style={{
+        position: "relative",
+        width: "100%",
+        paddingBottom: "56.25%",
+        margin: '20px 0', // Add margin above and below the iframe
+        borderRadius: "10px",
+        overflow: "hidden", // Ensure the border radius applies correctly
+        backgroundColor: "#f0f0f0", // Light gray background for contrast
+        boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)", // Add shadow for depth
+      }}>
+        <iframe
+          src="https://www.google.com/maps/d/embed?mid=1h2_T7Z1sRNCewLZvbC32fE2Q9tDWGoo&ehbc=2E312F"
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            border: 0,
+            borderRadius: "10px"
+          }}
+          allowFullScreen=""
+          loading="lazy"
+          title="Google Map"
+        />
       </div>
-      <div className="info-cards">
-        <div className="info-card">
-          <div className="info-icon">📍</div>
-          <h3>Address</h3>
-          <p>Dunlap Ave D17, Phoenix, Arizona 85021, USA</p>
-          <a href="#">Learn More</a>
-        </div>
-        <div className="info-card">
-          <div className="info-icon">✉️</div>
-          <h3>Email</h3>
-          <p>demo@yourwebsite.com</p>
-          <p>you@website.com</p>
-          <a href="#">Learn More</a>
-        </div>
-        <div className="info-card">
-          <div className="info-icon">📞</div>
-          <h3>Phone</h3>
-          <p>0800 212 123 45 67</p>
-          <p>0800 212 123 45 68</p>
-          <a href="#">Learn More</a>
-        </div>
-      </div>
-    </div>
+    </Grid>
   );
 };
 

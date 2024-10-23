@@ -1,0 +1,172 @@
+.hr-section-min {
+    margin-top: 5%;
+    border: 2px solid #071230;
+    border-radius: 30px;
+    position: relative;
+    box-shadow: 0 3px 12px -1px rgba(0, 0, 0, 0.75);
+    padding: 1rem;
+    display: flex;
+    flex-direction: row; /* Image on the right side */
+    align-items: center;
+    justify-content: space-between; /* Adjusts spacing */
+    background: linear-gradient(135deg, #ffffff, #f5f7fa);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+}
+
+/* Container */
+.container-hr {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto; /* Centering the container */
+    padding: 2rem;
+}
+
+/* Hover Effect */
+.hr-section-min:hover {
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Capitalize Letter */
+.capitalize-letter {
+    font-size: clamp(3rem, 8vw, 5.5rem);
+    font-weight: bold;
+    line-height: 0.5;
+    margin-right: 10px;
+    color: #030560;
+}
+
+/* Head Content */
+.hr-content {
+    flex: 1; /* Allow the text area to grow */
+    padding: 20px 30px;
+    position: relative;
+    text-align: left; /* Ensure text aligns to the left */
+}
+
+/* Image Styles */
+.hr-image {
+    flex: 0 0 30%; /* Set a basis for the image */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hr-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.hr-image img:hover {
+    transform: scale(1.05);
+}
+
+/* Text Styles */
+.hr-content p {
+    line-height: 1.7;
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    font-style: italic;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: clamp(0.9rem, 2vw, 1rem) !important;
+}
+
+.hr-content h5 {
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    font-weight: 700;
+    margin-top: 20px;
+    color: #071230;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Layout for Medium Screens */
+@media (max-width: 992px) {
+    .hr-section-min {
+        padding: 1rem 1.5rem;
+    }
+
+    .hr-image {
+        flex: 0 0 35%; /* Adjust image size */
+        margin-left: 20px;
+    }
+
+    .hr-content {
+        flex: 1; /* Allow text area to grow */
+    }
+
+    .hr-content h5 {
+        font-size: clamp(1.25rem, 3.5vw, 1.75rem);
+    }
+
+    .hr-content p {
+        font-size: clamp(0.9rem, 2.5vw, 1rem);
+    }
+}
+
+/* Responsive Layout for Small Screens */
+@media (max-width: 768px) {
+    .hr-section-min {
+        flex-direction: column; /* Stack vertically */
+        align-items: center;
+        padding: 1.5rem;
+    }
+
+    .hr-image {
+        flex: 0 0 50%; /* Adjust image width */
+        margin: 0 auto 1rem auto; /* Center the image */
+    }
+
+    .hr-content {
+        flex: 1; /* Allow text area to grow */
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .hr-content h5 {
+        font-size: 1.5rem;
+    }
+
+    .hr-content p {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.9rem !important;
+    }
+}
+
+/* Responsive Layout for Extra Small Screens */
+@media (max-width: 480px) {
+    .hr-section-min {
+        padding: 1rem;
+    }
+
+    .hr-image {
+        flex: 0 0 70%; /* Increase image width for small screens */
+    }
+
+    .hr-content {
+        text-align: center;
+    }
+
+    .hr-content h5 {
+        font-size: 1.25rem;
+    }
+
+    .hr-content p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
+    p {
+        font-size: 0.8rem !important;
+    }
+}

@@ -32,7 +32,7 @@
 }
 
 .intro-fin h3 {
-    background-color: #f72f20;
+    background: linear-gradient(135deg, rgba(6, 9, 97, 0.9), rgba(32, 118, 247, 0.8));
     color: #fff;
     padding: 10px;
     border-radius: 15px 0;
@@ -66,8 +66,8 @@
 
 /* Course Item Box Styling */
 .ag-courses-item_bg {
-    background-color: #071230;
-    color: #fff;
+    background-color: #fff;
+    color: #090909;
     border-radius: 50px 0px;
     padding: 30px;
     height: 80px;
@@ -78,6 +78,8 @@
     overflow: hidden;
     transition: background-color 0.3s ease;
     cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
 
 /* Initial red corner using pseudo-element */
@@ -88,14 +90,14 @@
     left: 0;
     width: 50px;
     height: 50px;
-    background-color: #f72f20;
+    background: linear-gradient(135deg, rgba(6, 9, 97, 0.9), rgba(32, 118, 247, 0.8));
     border-radius: 0 0 50px 0;
     transition: all 0.3s ease;
 }
 
 /* Hover effect to change the entire box color */
 .ag-courses-item_bg:hover {
-    background-color: #f72f20;
+    background: linear-gradient(135deg, rgba(6, 9, 97, 0.9), rgba(32, 118, 247, 0.8));
     color: #fff;
 }
 

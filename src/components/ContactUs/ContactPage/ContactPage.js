@@ -6,9 +6,9 @@ const ContactPage = () => {
     <div className="custom-background">
       <div className="navigation">
         <a href="/" className="home-link">
-          <span className="arrow">&larr;</span> Home
+          {/* <span className="arrow">&larr;</span> Home */}
         </a>
-        <div className="contact-text">Contact Us</div>
+        {/* <div className="contact-text">Contact Us</div> */}
       </div>
       {/* <div className="bg-bank-head mt-5"></div> */}
     </div>

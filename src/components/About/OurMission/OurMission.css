@@ -1,24 +1,26 @@
 .mission-vision-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
+    display: grid;
+    grid-template-columns: 1fr ; 
+    gap: 30px;
     padding: 40px;
-    background-image: url('../../../assest/HeroBackground.jpg'); /* Reference to your background image */
-    background-size: cover;
-    background-position: center;
+    background: linear-gradient(135deg, #374cd5, #000000);
     min-height: 100vh;
-    flex-wrap: wrap; /* Allow wrapping for responsiveness */
 }
 
 .card {
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-    padding: 20px;
-    max-width: 400px;
-    margin: 20px;
-    text-align: left;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
     position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
 .icon {
@@ -28,47 +30,120 @@
 }
 
 .icon img {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .icon img {
+    transform: scale(1.1);
 }
 
 .card h2 {
-    font-size: 35px;
-    margin-left: 60px; 
-    text-shadow: 0 1px 12px rgb(0 0 0 / .6);
+    font-size: clamp(1.75rem, 5vw, 2.5rem); /* Dynamically scale based on screen size */
+    margin: 20px 0;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e0e0e0;
 }
 
 .card p {
-    font-size: 16px;
-    line-height: 1.5;
+    font-size: clamp(1rem, 2.5vw, 1.25rem); /* Dynamically adjust text size */
+    line-height: 1.6;
 }
 
+/* Responsive Adjustments */
 @media (max-width: 1200px) {
     .mission-vision-container {
-        flex-direction: row;
-        flex-wrap: wrap;
+        grid-template-columns: 1fr; /* One column layout for mid-sized screens */
+        padding: 30px;
     }
+
     .card {
-        width: calc(50% - 40px); /* Two columns */
+        padding: 20px;
+    }
+    
+    .card h2 {
+        font-size: clamp(1.5rem, 4vw, 2rem);
     }
 }
 
 @media (max-width: 768px) {
     .mission-vision-container {
-        flex-direction: column;
-        align-items: center;
+        padding: 20px;
     }
 
     .card {
-        width: 90%;
-        margin: 10px;
-    }
-    .icon {
-        position: static;
-        margin-bottom: 10px;
+        padding: 15px;
     }
 
     .card h2 {
-        margin-left: 0;
+        font-size: clamp(1.25rem, 3.5vw, 1.75rem);
+    }
+
+    .icon {
+        position: static; /* Center icon for small screens */
+        margin: 10px auto;
+    }
+
+    .icon img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .card p {
+        font-size: clamp(0.9rem, 2vw, 1rem);
+    }
+}
+
+@media (max-width: 576px) {
+    .mission-vision-container {
+        padding: 10px;
+    }
+
+    .card {
+        padding: 10px;
+    }
+
+    .card h2 {
+        font-size: clamp(1rem, 3vw, 1.5rem);
+    }
+
+    .icon img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .card p {
+        font-size: clamp(0.85rem, 2vw, 1rem);
+    }
+}
+
+@media (max-width: 480px) {
+    .mission-vision-container {
+        gap: 20px;
+        padding: 8px;
+    }
+
+    .card {
+        padding: 8px;
+    }
+
+    .card h2 {
+        font-size: clamp(1rem, 2.5vw, 1.25rem);
+    }
+
+    .icon img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .card p {
+        font-size: clamp(0.8rem, 2vw, 0.95rem);
     }
 }

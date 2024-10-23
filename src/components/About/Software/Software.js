@@ -41,7 +41,7 @@ const Software = () => {
             <ServiceBox
               href="/services"
               iconClass={FaCogs}
-              title="ECUZEN Services"
+              title="Services"
             //   description="Lorem ipsum dolor sit amet consectetur adipisicing elit."
               style={{ marginRight: '10px' }}
             />

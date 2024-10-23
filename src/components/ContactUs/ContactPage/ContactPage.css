@@ -1,133 +1,141 @@
-
+/* Background and Container Styles */
 .custom-background {
-    background: url('../../../assest/contact.png') no-repeat center top;
-    background-size: cover;
-    min-height: 70vh; 
-    position: relative;
-    padding: 0 5%;
-    display: flex;
-    align-items: flex-start;
-  }
-  
-  .navigation {
-    position: absolute;
-    top: 65%;
-    left: 8%;
-    transform: translateY(-50%);
-    font-size: 1.5rem;
-    color: #fff;
-    font-weight: bold;
-    text-align: left;
-  }
-  
-  .home-link {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: #d9d9d9;
-    margin-bottom: 1rem;
-    font-size: 17px;
-  }
-  
-  .arrow {
-    margin-right: 0.5rem;
-    font-size: 1.25rem;
-  }
-  
-  .contact-text {
-    font-size: 48px;
-    color: #fff;
-    font-weight: 700;
-    margin-bottom: 30px;
-  }
-  
-  @media (max-width: 1200px) {
-    .custom-background {
-      min-height: 65vh; 
-    }
-    .navigation {
-      font-size: 1.4rem;
-      left: 6%;
-    }
-    .home-link {
-      font-size: 16px;
-    }
-    .contact-text {
-      font-size: 42px;
-    }
-  }
-  
-  @media (max-width: 992px) {
-    .custom-background {
-      min-height: 60vh; 
-    }
-    .navigation {
-      font-size: 1.3rem;
-      left: 5%;
-    }
-    .home-link {
-      font-size: 15px;
-    }
-    .contact-text {
-      font-size: 36px;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    .custom-background {
-      min-height: 55vh; 
-      padding: 0 3%;
-      align-items: flex-start;
-    }
-    .navigation {
-      top: 50%;
-      left: 4%;
-      font-size: 1.2rem;
-      transform: translateY(-50%);
-    }
-    .home-link {
-      font-size: 14px;
-    }
-    .contact-text {
-      font-size: 32px; 
-    }
-  }
-  
-  @media (max-width: 576px) {
-    .custom-background {
-      min-height: 50vh; 
-    }
-    .navigation {
-      top: 50%;
-      left: 3%;
-      font-size: 1rem;
-    }
-    .home-link {
-      font-size: 13px;
-    }
-    .contact-text {
-      font-size: 28px; 
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .custom-background {
-      min-height: 45vh; 
-      background-position: center top;
-    }
-    .navigation {
-      top: 50%;
-      left: 2%;
-      font-size: 0.9rem;
-    }
-    .home-link {
-      font-size: 12px;
-    }
-    .contact-text {
-      font-size: 24px; 
-    }
-  }
+  background: url('../../../assest/contact us.jpg') no-repeat center top;
+  background-size: cover;
+  min-height: 70vh;
+  position: relative;
+  padding: 0 5%;
+  display: flex;
+  align-items: flex-start;
+}
 
+/* Navigation container for links and text */
+.navigation {
+  position: absolute;
+  top: 65%;
+  left: 8%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  color: #fff;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* Link styling */
+.home-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #d9d9d9;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.arrow {
+  margin-right: 0.5rem;
+  font-size: 1.25rem;
+}
+
+/* Contact text */
+.contact-text {
+  font-size: 3rem;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+/* Media queries for responsiveness */
+
+/* Adjusting for screens smaller than 1200px */
+@media (max-width: 1200px) {
+  .custom-background {
+    min-height: 65vh;
+  }
+  .navigation {
+    font-size: 1.4rem;
+    left: 6%;
+  }
+  .home-link {
+    font-size: 0.9rem;
+  }
+  .contact-text {
+    font-size: 2.8rem;
+  }
+}
+
+/* Adjusting for screens smaller than 992px (tablets) */
+@media (max-width: 992px) {
+  .custom-background {
+    min-height: 60vh;
+  }
+  .navigation {
+    font-size: 1.3rem;
+    left: 5%;
+  }
+  .home-link {
+    font-size: 0.85rem;
+  }
+  .contact-text {
+    font-size: 2.5rem;
+  }
+}
+
+/* For smaller screens like tablets and large phones */
+@media (max-width: 768px) {
+  .custom-background {
+    min-height: 55vh;
+    padding: 0 3%;
+  }
+  .navigation {
+    top: 50%;
+    left: 4%;
+    font-size: 1.2rem;
+    transform: translateY(-50%);
+  }
+  .home-link {
+    font-size: 0.8rem;
+  }
+  .contact-text {
+    font-size: 2rem;
+  }
+}
+
+/* For small mobile screens (576px and below) */
+@media (max-width: 576px) {
+  .custom-background {
+    min-height: 50vh;
+  }
+  .navigation {
+    top: 50%;
+    left: 3%;
+    font-size: 1rem;
+  }
+  .home-link {
+    font-size: 0.75rem;
+  }
+  .contact-text {
+    font-size: 1.8rem;
+  }
+}
+
+/* For extra small screens like mobile phones (480px and below) */
+@media (max-width: 480px) {
+  .custom-background {
+    min-height: 45vh;
+    background-position: center top;
+  }
+  .navigation {
+    top: 50%;
+    left: 2%;
+    font-size: 0.9rem;
+  }
+  .home-link {
+    font-size: 0.7rem;
+  }
+  .contact-text {
+    font-size: 1.5rem;
+  }
+}
 
  
 /* .bg-bank-head {
